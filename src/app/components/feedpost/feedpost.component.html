@@ -1,0 +1,12 @@
+<div>
+  <b>
+    {{ idea.title }}
+  </b>
+  <p>
+    {{ idea.desc }}
+  </p>
+  <div>
+    {{ idea.likes }} likes, {{ idea.comments}} comments
+  </div>
+  <app-likebar [id]="idea.id"></app-likebar>
+</div>

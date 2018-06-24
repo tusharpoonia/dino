@@ -1,0 +1,12 @@
+<div>
+  <b>
+    {{ idea.title }}
+  </b>
+  <p>
+    {{ idea.desc }}
+  </p>
+  <div *ngIf="idea.visibility=='public'">
+    {{ idea.likes }} likes, {{ idea.comments}} comments
+    <app-likebar [id]="idea.id"></app-likebar>
+  </div>
+</div>

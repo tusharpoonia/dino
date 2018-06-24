@@ -1,0 +1,15 @@
+<div>
+  <i>
+    {{ post.activity }}
+  </i>
+  <b>
+    {{ post.title }}
+  </b>
+  <p>
+    {{ post.desc }}
+  </p>
+  <p>
+    {{ post.likes }} likes, {{ post.comments }} comments
+  </p>
+  <app-likebar [id]="post.id"></app-likebar>
+</div>

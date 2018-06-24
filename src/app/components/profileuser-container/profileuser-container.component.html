@@ -1,0 +1,8 @@
+<div>
+  {{ userType }}
+  <ul>
+    <li *ngFor="let user of data">
+      <app-user [user]="user"></app-user>
+    </li>
+  </ul>
+</div>

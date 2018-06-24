@@ -1,0 +1,9 @@
+<div>
+  <ul>
+    <li *ngFor="let activity of data">
+      <app-user *ngIf="activity.type == 'user'" [user]="activity"></app-user>
+      <app-topic *ngIf="activity.type == 'topic'" [topic]="activity"></app-topic>
+      <app-activitypost *ngIf="activity.type == 'post'" [post]="activity"></app-activitypost>
+    </li>
+  </ul>
+</div>
